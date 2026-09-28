@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f3f6f9;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+header {
+    background: linear-gradient(135deg, #0f5132, #198754);
+    color: white;
+    padding: 70px 20px;
+}
+
+.header-content {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.tag {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 7px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+
+header h1 {
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 18px;
+}
+
+header p {
+    max-width: 600px;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+nav {
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-content {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #374151;
+    font-weight: 600;
+    padding: 18px 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #198754;
+    background: #f0fdf4;
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+main {
+    max-width: 1100px;
+    margin: 45px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 18px;
+    margin-bottom: 30px;
+    padding: 35px;
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    gap: 25px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e5e7eb;
+}
+
+.numero {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    background: #e8f5ee;
+    color: #198754;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.section-content {
+    width: 100%;
+}
+
+.categoria {
+    color: #198754;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+h2 {
+    color: #172b1f;
+    font-size: 28px;
+    margin: 5px 0 8px;
+}
+
+.descricao {
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+button {
+    border: none;
+    background: #198754;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 9px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #146c43;
+    transform: translateY(-1px);
+}
+
+button:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+}
+
+
+/* =========================
+   RESULTADOS
+========================= */
+
+.resultado,
+.usuarios,
+.clima {
+    margin-top: 22px;
+    background: #f8faf9;
+    border: 1px solid #dce9e1;
+    border-radius: 12px;
+    padding: 20px;
+    min-height: 70px;
+}
+
+.mensagem-inicial {
+    color: #6b7280;
+}
+
+
+/* =========================
+   EXERCÍCIO 1
+========================= */
+
+.personagem {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.personagem img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.personagem h3 {
+    color: #198754;
+    margin-bottom: 5px;
+}
+
+.info {
+    color: #555;
+    margin: 3px 0;
+}
+
+
+/* =========================
+   BUSCA
+========================= */
+
+.campo-busca {
+    display: flex;
+    gap: 10px;
+}
+
+.campo-busca input {
+    flex: 1;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+.campo {
+    margin-bottom: 18px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 600;
+    color: #374151;
+}
+
+input {
+    width: 100%;
+    border: 2px solid #d1d5db;
+    border-radius: 9px;
+    padding: 13px 15px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 3px rgba(25, 135, 84, 0.1);
+}
+
+#formLogin {
+    max-width: 500px;
+}
+
+
+/* =========================
+   LOGIN
+========================= */
+
+.login-sucesso {
+    color: #166534;
+    background: #dcfce7;
+    border: 1px solid #86efac;
+    padding: 15px;
+    border-radius: 9px;
+}
+
+.login-erro {
+    color: #991b1b;
+    background: #fee2e2;
+    border: 1px solid #fca5a5;
+    padding: 15px;
+    border-radius: 9px;
+}
+
+
+/* =========================
+   USUÁRIOS
+========================= */
+
+.lista-usuarios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.usuario {
+    background: white;
+    border: 1px solid #dce9e1;
+    border-radius: 12px;
+    padding: 18px;
+}
+
+.usuario h3 {
+    color: #198754;
+    margin-bottom: 8px;
+}
+
+.usuario p {
+    color: #555;
+    font-size: 14px;
+}
+
+
+/* =========================
+   CLIMA
+========================= */
+
+.clima-box {
+    text-align: center;
+}
+
+.temperatura {
+    font-size: 48px;
+    font-weight: bold;
+    color: #198754;
+    margin: 10px 0;
+}
+
+.clima-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.clima-item {
+    background: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: 1px solid #dce9e1;
+}
+
+.clima-item strong {
+    display: block;
+    color: #198754;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #172b1f;
+    color: white;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+.footer-content p {
+    color: #cbd5cf;
+    margin-top: 5px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 50px 20px;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    .nav-content {
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+
+    nav a {
+        white-space: nowrap;
+        padding: 15px;
+    }
+
+    .card {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+
+    .numero {
+        width: 50px;
+        height: 50px;
+    }
+
+    .lista-usuarios {
+        grid-template-columns: 1fr;
+    }
+
+    .campo-busca {
+        flex-direction: column;
+    }
+
+    .personagem {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

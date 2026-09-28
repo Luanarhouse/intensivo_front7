@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Intensivo Front-end 07</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <span class="tag">INTENSIVO FRONT-END 07</span>
+
+            <h1>Interfaces Web<br>Consumindo APIs</h1>
+
+            <p>
+                Exercícios práticos utilizando JavaScript,
+                Fetch API e serviços externos.
+            </p>
+        </div>
+    </header>
+
+
+    <nav>
+        <div class="nav-content">
+            <a href="#exercicio1">API</a>
+            <a href="#exercicio2">Busca</a>
+            <a href="#exercicio3">Login</a>
+            <a href="#exercicio4">Usuários</a>
+            <a href="#exercicio5">Clima</a>
+        </div>
+    </nav>
+
+
+    <main>
+
+        <!-- EXERCÍCIO 1 -->
+        <section class="card" id="exercicio1">
+
+            <div class="numero">01</div>
+
+            <div class="section-content">
+
+                <span class="categoria">FETCH API</span>
+
+                <h2>Buscar dados de uma API</h2>
+
+                <p class="descricao">
+                    Utilize o botão abaixo para buscar informações
+                    de personagens através de uma API pública.
+                </p>
+
+                <button id="btnApi">
+                    Buscar personagem
+                </button>
+
+                <div id="resultadoApi" class="resultado">
+                    <p class="mensagem-inicial">
+                        Clique no botão para carregar os dados.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EXERCÍCIO 2 -->
+        <section class="card" id="exercicio2">
+
+            <div class="numero">02</div>
+
+            <div class="section-content">
+
+                <span class="categoria">FILTRO</span>
+
+                <h2>Campo de busca</h2>
+
+                <p class="descricao">
+                    Digite o nome de um personagem para encontrar
+                    informações utilizando dados de uma API.
+                </p>
+
+                <div class="campo-busca">
+
+                    <input
+                        type="text"
+                        id="campoBusca"
+                        placeholder="Ex.: Rick, Morty..."
+                    >
+
+                    <button id="btnBusca">
+                        Buscar
+                    </button>
+
+                </div>
+
+                <div id="resultadoBusca" class="resultado">
+                    <p class="mensagem-inicial">
+                        Digite um nome para realizar a busca.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EXERCÍCIO 3 -->
+        <section class="card" id="exercicio3">
+
+            <div class="numero">03</div>
+
+            <div class="section-content">
+
+                <span class="categoria">AUTENTICAÇÃO</span>
+
+                <h2>Sistema de Login</h2>
+
+                <p class="descricao">
+                    Os dados informados serão enviados para uma
+                    API fictícia de autenticação.
+                </p>
+
+                <form id="formLogin">
+
+                    <div class="campo">
+
+                        <label for="usuario">
+                            Usuário
+                        </label>
+
+                        <input
+                            type="text"
+                            id="usuario"
+                            placeholder="Digite seu usuário"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="senha">
+                            Senha
+                        </label>
+
+                        <input
+                            type="password"
+                            id="senha"
+                            placeholder="Digite sua senha"
+                            required
+                        >
+
+                    </div>
+
+
+                    <button type="submit">
+                        Entrar
+                    </button>
+
+                </form>
+
+                <div id="mensagemLogin" class="resultado">
+                    <p class="mensagem-inicial">
+                        Informe seus dados para realizar o login.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EXERCÍCIO 4 -->
+        <section class="card" id="exercicio4">
+
+            <div class="numero">04</div>
+
+            <div class="section-content">
+
+                <span class="categoria">JSON API</span>
+
+                <h2>Lista de usuários</h2>
+
+                <p class="descricao">
+                    Os usuários abaixo serão carregados diretamente
+                    de uma API JSON.
+                </p>
+
+                <button id="btnUsuarios">
+                    Carregar usuários
+                </button>
+
+                <div id="listaUsuarios" class="usuarios">
+
+                    <p class="mensagem-inicial">
+                        Clique no botão para carregar os usuários.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EXERCÍCIO 5 -->
+        <section class="card" id="exercicio5">
+
+            <div class="numero">05</div>
+
+            <div class="section-content">
+
+                <span class="categoria">GEOLOCALIZAÇÃO</span>
+
+                <h2>Previsão do tempo</h2>
+
+                <p class="descricao">
+                    Permita o acesso à sua localização para consultar
+                    a previsão do tempo da região.
+                </p>
+
+                <button id="btnLocalizacao">
+                    Ver previsão do tempo
+                </button>
+
+                <div id="resultadoClima" class="clima">
+
+                    <p class="mensagem-inicial">
+                        Clique no botão para consultar o clima.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h3>Intensivo de Front-end 07</h3>
+
+            <p>
+                Desenvolvido utilizando HTML, CSS, JavaScript e APIs.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
